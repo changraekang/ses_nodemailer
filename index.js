@@ -10,15 +10,16 @@ const transporter = nodemailer.createTransport({
 console.log("안녕");
 transporter.sendMail(
   {
-    from: "no-reply@moviequizrae.fun",
-    to: "storkcr@gmail.com",
-    subject: "AWS SES TEST",
-    text: "안녕하세요",
+    from: "no-reply@lckfantasy.com",
+    to: "stork_kcr@naver.com",
+    subject: "메일 테스트",
+    text: "https://www.lckfantasy.com/signin?token=c91e6379-36e8-46e2-aa70-1a8f2966035b&email=h@naver.com",
   },
   (err, info) => {
     if (err) {
       console.log(err);
     }
+    console.log("성공");
     console.log(info);
   }
 );
